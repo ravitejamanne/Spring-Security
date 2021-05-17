@@ -52,8 +52,32 @@
     <version>4.0.1</version>
     <scope>provided</scope>
 </dependency>
+		
 
 	</dependencies>
+<build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+               <execution>
+                  <id>id.clean</id>
+                  <phase>clean</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <echo>clean phase</echo>
+                     </tasks>
+                  </configuration>
+               </execution>     
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
 	<build>
 		<finalName>Spring-MVC-Security-Demo</finalName>
 	</build>
