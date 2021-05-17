@@ -77,8 +77,8 @@
             </executions>
          </plugin>
       </plugins>
-   </build>
-	<build>
+   
+	
 		<finalName>Spring-MVC-Security-Demo</finalName>
 	</build>
 </project>
